@@ -1,10 +1,10 @@
 # quiz_bloc
 
-A new Flutter project.
+A new Flutter project Quiz App.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is Quiz Application using Bloc State management and Api.
 
 A few resources to get you started if this is your first Flutter project:
 
