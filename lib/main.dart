@@ -13,7 +13,7 @@ void main() {
     MultiBlocProvider(
       providers: [
         BlocProvider<QuizBloc>(
-          create: (context) => QuizBloc(),
+          create: (context) => QuizBloc()..add(QuizLoadEvent()),
         ),
       ],
       child: MaterialApp(

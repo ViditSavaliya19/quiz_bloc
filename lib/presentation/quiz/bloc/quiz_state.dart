@@ -1,3 +1,4 @@
+import 'package:quiz_bloc/domain/model/data_model.dart';
 import 'package:quiz_bloc/domain/model/quiz_model.dart';
 
 abstract class QuizState {
@@ -13,8 +14,12 @@ class QuizLoadedState extends QuizState {
 }
 
 class NextQuestionState extends QuizState {
-  int qaIndex;
-  NextQuestionState(this.qaIndex);
+  DataModel r1;
+  NextQuestionState(this.r1);
+}
+class QuizCompletedState extends QuizState {
+  int point;
+  QuizCompletedState(this.point);
 }
 
 class QuizLoadErrorState extends QuizState
@@ -22,3 +27,4 @@ class QuizLoadErrorState extends QuizState
   String error;
   QuizLoadErrorState(this.error);
 }
+

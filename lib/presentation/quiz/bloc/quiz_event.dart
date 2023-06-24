@@ -13,11 +13,13 @@ class QuizLoadedEvent extends QuizEvent {
 }
 
 class NextQuestionEvent extends QuizEvent {
-  int qaIndex;
-  NextQuestionEvent(this.qaIndex);
+
+  NextQuestionEvent();
 }
 
 class QuizLoadedErrorEvent extends QuizEvent {
   String error;
   QuizLoadedErrorEvent(this.error);
 }
+
+
